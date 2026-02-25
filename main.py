@@ -13,7 +13,7 @@ async def read_root(prompt):
     client = genai.Client()
 
     response = client.models.generate_content(
-        model="gemini-3-flash-preview", contents = prompt
+        model="gemini-1.5-pro", contents = prompt
     )
     print(response.text)
 
