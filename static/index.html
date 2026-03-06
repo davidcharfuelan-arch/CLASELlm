@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LLM Frontend</title>
+  <style>
+    body{font-family:system-ui,Segoe UI,Roboto,Arial;margin:24px}
+    textarea{width:100%;max-width:900px}
+    pre{white-space:pre-wrap;background:#f7f7f8;padding:12px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <h1>Frontend para LLM</h1>
+  <p>Escribe un prompt y pulsa <strong>Enviar</strong>.</p>
+  <textarea id="prompt" rows="5" placeholder="Escribe tu prompt aquí..."></textarea>
+  <div style="margin-top:8px">
+    <label for="baseUrl">Base URL:</label>
+    <select id="baseUrl">
+      <option value="">(mismo origen) /llm/</option>
+      <option value="http://localhost:8000">http://localhost:8000</option>
+    </select>
+    <button id="send">Enviar</button>
+  </div>
+
+  <h2>Respuesta</h2>
+  <pre id="response">—</pre>
+
+  <script src="app.js"></script>
+</body>
+</html>
