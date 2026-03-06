@@ -1,4 +1,4 @@
-y# Sistema de Pedidos a Domicilio
+Sistema de Pedidos a Domicilio
 
 Este proyecto representa una aplicación similar a Rappi que permite a los usuarios solicitar productos o comida desde diferentes establecimientos y recibirlos en su domicilio.
 
